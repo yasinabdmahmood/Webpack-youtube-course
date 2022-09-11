@@ -1,6 +1,5 @@
-import { AlertService } from "./alert.service.js";
-import { ComponentService } from "./component.sevice.js";
 import {parseInputs} from './utils/parse-inputs'
+import {inputsAreValid} from './utils/inputs-are-valid.js'
 
 
 export const run = (alertService, componentService) => {

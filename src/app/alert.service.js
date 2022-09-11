@@ -1,4 +1,4 @@
-import inputsAreValid from './utils/inputs-are-valid.js'
+import {inputsAreValid} from './utils/inputs-are-valid.js'
 
 export class AlertService {
     constructor() {
