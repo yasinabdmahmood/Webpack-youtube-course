@@ -1,6 +1,9 @@
-const alertService = new AlertService();
-const componentService = new ComponentService();
-const run = (alertService, componentService) => {
+import { AlertService } from "./alert.service.js";
+import { ComponentService } from "./component.sevice.js";
+import {parseInputs} from './utils/parse-inputs'
+
+
+export const run = (alertService, componentService) => {
   alertService.hideErrors();
 
   componentService.onClick(() => {
@@ -16,4 +19,3 @@ const run = (alertService, componentService) => {
     }
   });
 };
-run(alertService, componentService);
